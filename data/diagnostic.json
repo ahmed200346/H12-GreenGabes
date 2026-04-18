@@ -1,0 +1,63 @@
+{
+  "contexte_pdl_gabes_2023": {
+    "ressources_en_eau": {
+      "nappe_profonde": {
+        "zone": "Gabès Nord",
+        "usage_principal": ["Agriculture", "SONEDE (Eau potable)", "Industrie (GCT)"],
+        "taux_exploitation_pourcentage": 55.85,
+        "note": "Ressource fortement sollicitée par le Groupe Chimique Tunisien (GCT)."
+      },
+      "nappe_phreatique": {
+        "zone": "Gabès Nord (couvre Gabès, Gabès Ouest, Ghannouch, Métouia, Oudhref)",
+        "statut_legal": "Zone d'interdiction",
+        "recommandation_ia": "Interdire ou décourager la création de nouveaux forages anarchiques ou de surface dans cette zone."
+      }
+    },
+    "repartition_terres_agricoles": {
+      "delegation_gabes_medina": {
+        "superficie_totale_ha": 1774,
+        "terres_cultivables_oasis_ha": 590,
+        "foret_ha": 5,
+        "statut_foncier": "Terres privées"
+      },
+      "delegation_gabes_sud": {
+        "superficie_totale_ha": 25552,
+        "surface_agricole_utile_ha": 22900,
+        "terres_cultivables_ha": 11500,
+        "parcours_ha": 11300,
+        "foret_ha": 100
+      }
+    },
+    "structure_des_oasis_urbaines": {
+      "oasis_existantes": [
+        {"nom": "Bahria / Chott Essalem", "superficie_ha": 290, "taille_moyenne_exploitation_ha": 0.2},
+        {"nom": "Ouesta / Centrale", "superficie_ha": 300, "taille_moyenne_exploitation_ha": "Non précisé"},
+        {"nom": "Chentecha / Ain Zrig", "superficie_ha": 120, "taille_moyenne_exploitation_ha": 0.9},
+        {"nom": "Zrig Barrania", "superficie_ha": "Non précisé", "taille_moyenne_exploitation_ha": 0.32},
+        {"nom": "Zrigue Dakhlania", "superficie_ha": 18, "taille_moyenne_exploitation_ha": "Non précisé"}
+      ],
+      "contrainte_fonciere_legale": {
+        "reglementation_afa": "Le minimum de l’exploitation agricole a été limité à 1 hectare.",
+        "impact": "Le partage et la vente sont interdits s'ils aboutissent à des propriétés inférieures à 1 ha (lutte contre le morcellement)."
+      }
+    },
+    "menaces_et_pollutions": {
+      "pollution_atmospherique": {
+        "agents_polluants": ["SO2", "SO4", "Ammoniaque (NH3)"],
+        "source": "Usines chimiques (Groupe Chimique Tunisien)",
+        "impact_agricole": "Rend plusieurs zones de cultures oasiennes impropres à la production."
+      },
+      "pollution_sols_et_eaux": {
+        "causes": ["Déchets animaux", "Pesticides", "Engrais chimiques excessifs"],
+        "vecteur": "Eaux de ruissellement"
+      },
+      "urbanisation_anarchique": {
+        "zones_les_plus_menacees": ["Jara", "Chott Essalem", "Nezla", "El Bled", "Haouel El Oued"],
+        "cause": "Absence de zone d'habitat alternative et spéculation foncière."
+      }
+    },
+    "demographie_agricole": {
+      "part_emploi_agricole": "Moins de 4,5% de la population active (en forte baisse)."
+    }
+  }
+}

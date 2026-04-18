@@ -1,0 +1,104 @@
+{
+  "superficie_arboriculture": [
+    {
+      "annee": 2023,
+      "delegation": "Total Gouvernorat",
+      "oliviers_ha": 60000,
+      "dattes_ha": 7325,
+      "grenades_ha": 3200,
+      "raisins_ha": 110,
+      "figues_ha": 487,
+      "amandes_ha": 397,
+      "autres_ha": 512
+    },
+    {
+      "annee": 2024,
+      "delegation": "Total Gouvernorat",
+      "oliviers_ha": 75023,
+      "dattes_ha": 7325,
+      "grenades_ha": 3200,
+      "raisins_ha": 110,
+      "figues_ha": 487,
+      "amandes_ha": 397,
+      "autres_ha": 512
+    }
+  ],
+  
+  "agriculture_biologique": [
+    {"annee": 2023, "culture": "Olivier (huile)", "nombre_plants": 9500, "superficie_ha": 46.57, "production_t": 270},
+    {"annee": 2023, "culture": "Grenadier", "nombre_plants": 20000, "superficie_ha": 48.42, "production_t": 310},
+    {"annee": 2023, "culture": "Palmier dattier", "nombre_plants": 1000, "superficie_ha": 20.25, "production_t": 180},
+    {"annee": 2023, "culture": "Agrumes", "nombre_plants": 4500, "superficie_ha": 9.58, "production_t": 75},
+    {"annee": 2023, "culture": "Arbres fruitiers divers", "nombre_plants": 14000, "superficie_ha": 56.33, "production_t": 90},
+    {"annee": 2023, "culture": "Amandier", "nombre_plants": 500, "superficie_ha": 4.5, "production_t": 100},
+    {"annee": 2023, "culture": "Plantations diverses", "nombre_plants": null, "superficie_ha": 5.73, "production_t": 50},
+    {"annee": 2023, "culture": "Fourrages", "nombre_plants": null, "superficie_ha": 8.09, "production_t": 400},
+    {"annee": 2023, "culture": "Spiruline", "nombre_plants": null, "superficie_ha": 1.24, "production_t": 1},
+    {"annee": 2023, "culture": "TOTAL", "nombre_plants": null, "superficie_ha": 200.8, "production_t": 1476}
+  ],
+  
+  "terres_cultivables_par_delegation": [
+    {"annee": 2024, "delegation": "Gabès Ville", "cerealiculture_ha": 398, "fourrages_ha": 241, "legumes_ha": 363, "legumineuses_ha": 6, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "Gabès Ouest", "cerealiculture_ha": 481, "fourrages_ha": 319, "legumes_ha": 560, "legumineuses_ha": 13, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "Gabès Sud", "cerealiculture_ha": 546, "fourrages_ha": 263, "legumes_ha": 1373, "legumineuses_ha": 50, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "Ghannouch", "cerealiculture_ha": 463, "fourrages_ha": 322, "legumes_ha": 804, "legumineuses_ha": 8, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "El Metouia", "cerealiculture_ha": 574, "fourrages_ha": 362, "legumes_ha": 2446, "legumineuses_ha": 12, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "Menzel Habib", "cerealiculture_ha": 0, "fourrages_ha": 7, "legumes_ha": 179, "legumineuses_ha": 0, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "El Hamma", "cerealiculture_ha": 2101, "fourrages_ha": 1353, "legumes_ha": 1588, "legumineuses_ha": 52, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "Matmata Ancienne", "cerealiculture_ha": 0, "fourrages_ha": 0, "legumes_ha": 0, "legumineuses_ha": 0, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "Matmata Nouvelle", "cerealiculture_ha": 130, "fourrages_ha": 86, "legumes_ha": 504, "legumineuses_ha": 6, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "Mareth + Dkhilet Toujène", "cerealiculture_ha": 2712, "fourrages_ha": 1777, "legumes_ha": 1557, "legumineuses_ha": 68, "arboriculture_ha": null, "autres_cultures_ha": null},
+    {"annee": 2024, "delegation": "TOTAL", "cerealiculture_ha": 7405, "fourrages_ha": 4730, "legumes_ha": 9374, "legumineuses_ha": 215, "arboriculture_ha": 87054, "autres_cultures_ha": 422}
+  ],
+
+  "production_dattes_par_delegation": [
+    {"annee": "2023-2024", "delegation": "El Hamma et El Hamma Ouest", "superficie_ha": 2016, "production_t": 6000},
+    {"annee": "2023-2024", "delegation": "Gabès Ouest", "superficie_ha": 345, "production_t": 1800},
+    {"annee": "2023-2024", "delegation": "Gabès Ville", "superficie_ha": 590, "production_t": 1700},
+    {"annee": "2023-2024", "delegation": "Gabès Sud", "superficie_ha": 925, "production_t": 1000},
+    {"annee": "2023-2024", "delegation": "El Metouia et Oudhref", "superficie_ha": 540, "production_t": 3500},
+    {"annee": "2023-2024", "delegation": "Mareth", "superficie_ha": 2323, "production_t": 5500},
+    {"annee": "2023-2024", "delegation": "Ghannouch", "superficie_ha": 773, "production_t": 500},
+    {"annee": "2023-2024", "delegation": "TOTAL", "superficie_ha": 7512, "production_t": 20000}
+  ],
+
+  "production_oliviers_par_delegation": [
+    {"annee": "2023-2024", "delegation": "Mareth", "superficie_ha": 20476.16, "production_t": 29328},
+    {"annee": "2023-2024", "delegation": "Dkhilet Toujène", "superficie_ha": 3449.93, "production_t": 182},
+    {"annee": "2023-2024", "delegation": "Matmata Nouvelle", "superficie_ha": 7183.14, "production_t": 3125},
+    {"annee": "2023-2024", "delegation": "Matmata", "superficie_ha": 1572.06, "production_t": 127},
+    {"annee": "2023-2024", "delegation": "El Hamma et El Hamma Ouest", "superficie_ha": 6547.53, "production_t": 7355},
+    {"annee": "2023-2024", "delegation": "El Metouia et Oudhref", "superficie_ha": 8904.38, "production_t": 16039},
+    {"annee": "2023-2024", "delegation": "Gabès Sud", "superficie_ha": 6772.1, "production_t": 5342},
+    {"annee": "2023-2024", "delegation": "Gabès Ouest", "superficie_ha": 2306.93, "production_t": 2091},
+    {"annee": "2023-2024", "delegation": "Gabès Ville", "superficie_ha": 13.99, "production_t": 96},
+    {"annee": "2023-2024", "delegation": "Menzel Habib", "superficie_ha": 10948, "production_t": 3850},
+    {"annee": "2023-2024", "delegation": "Ghannouch", "superficie_ha": 518.83, "production_t": 2465},
+    {"annee": "2023-2024", "delegation": "TOTAL", "superficie_ha": 68694, "production_t": 70000}
+  ],
+
+  "production_arboriculture_totale": [
+    {
+      "annee": 2023,
+      "delegation": "Total Gouvernorat",
+      "oliviers_t": 75023,
+      "dattes_t": 22000,
+      "grenades_t": 25000,
+      "raisins_t": 375,
+      "figues_t": 980,
+      "amandes_t": 1980,
+      "autres_t": 3606
+    },
+    {
+      "annee": 2024,
+      "delegation": "Total Gouvernorat",
+      "oliviers_t": 70000,
+      "dattes_t": 22000,
+      "grenades_t": 25000,
+      "raisins_t": 375,
+      "figues_t": 980,
+      "amandes_t": 1980,
+      "autres_t": 3606
+    }
+  ]
+}

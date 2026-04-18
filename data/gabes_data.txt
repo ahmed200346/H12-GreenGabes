@@ -1,0 +1,54 @@
+=========================================================
+BASE DE DONNÉES DE RÉFÉRENCE : AGRICULTURE OASIS GABÈS
+Source : Étude Stratégique Sud 2015-2035 & Données Agronomiques
+=========================================================
+
+1. CONTEXTE RÉGIONAL (GABÈS)
+---------------------------------
+- Surface cultivable : 201 000 Hectares (28% de la région).
+- Type dominant : Arboriculture (83,2% des terres agricoles).
+- Système de culture : Structure en 3 étages (Oasis traditionnelle).
+  * Étage 1 (Haut) : Palmier Dattier (Ombrage).
+  * Étage 2 (Milieu) : Arbres fruitiers (Grenadier Gabsi AOC).
+  * Étage 3 (Bas) : Cultures maraîchères, Fourrages, Henné de Gabès.
+
+2. PARAMÈTRES TECHNIQUES DES ARBRES (Moteur de Recommandation)
+------------------------------------------------------------
+A. Palmier Dattier (Deglet Nour / Alig)
+   - Espacement : 8m x 8m (idéal) ou 10m x 10m.
+   - Besoins en eau : 15 à 25 m³/arbre/an.
+   - Sol préféré : Sablonneux, tolère une salinité élevée.
+   - Nutriments : Très gourmand en Potassium (K).
+
+B. Grenadier Gabsi (AOC)
+   - Espacement : 4m x 5m.
+   - Besoins en eau : 4 à 8 m³/arbre/an.
+   - Sol préféré : Limoneux (Tfali), pH idéal entre 5.5 et 7.0 (mais tolère pH alcalin de Gabès si amendé).
+   - Nutriments : Sensible au manque de Phosphore (P) pour la qualité du fruit.
+
+C. Olivier
+   - Espacement : 6m x 6m (intensif) ou 12m x 12m (traditionnel).
+   - Besoins en eau : 3 à 6 m³/arbre/an.
+   - Sol préféré : Calcaire, bien drainé.
+
+3. ANALYSE ET LOGIQUE DE DIAGNOSTIC (Rapport de Sol)
+---------------------------------------------------
+- pH Alcalin (> 8.0) : Cas fréquent à Gabès.
+  * Recommandation : Apport de soufre ou de matière organique (Compost).
+- Salinité élevée (Croûtes blanches) : 
+  * Recommandation : Favoriser Palmier et Henné. Éviter les cultures sensibles.
+- Carence en Azote (N) :
+  * Recommandation : Plantation de légumineuses (Luzerne) entre les arbres pour fixer l'azote.
+
+4. RECOMMANDATIONS STRATÉGIQUES (Source ODS 2035)
+-----------------------------------------------
+- Optimisation de l'eau : Taux d'exploitation des nappes à 93,7%. Recommander impérativement le goutte-à-goutte ou l'irrigation intelligente.
+- Valorisation des déchets : Utiliser les palmes sèches et restes de culture pour créer du COMPOST LOCAL (Engrais organique).
+- Diversification : Introduire des Plantes Médicinales et Aromatiques (PAM) pour augmenter le revenu au m².
+
+5. CONSEILS POUR L'AGRICULTEUR (Sortie du rapport)
+-------------------------------------------------
+- "Respecter la stratification pour créer un micro-climat humide sous les palmiers."
+- "Privilégier le Grenadier Gabsi pour sa valeur ajoutée à l'exportation."
+- "Appliquer l'engrais organique en période de repos végétatif (Hiver)."
+=========================================================

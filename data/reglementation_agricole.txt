@@ -1,0 +1,602 @@
+================================================================================
+BASE DE DONNÉES RÉGLEMENTAIRE - AGRICULTURE TUNISIENNE & GABÈS
+Source : Code des Eaux 1975, PDL 2023-2035, APIA, MAE, DGA
+Dernière mise à jour : 2026
+================================================================================
+
+════════════════════════════════════════════════════════════════════════════════
+1. CODE DES EAUX TUNISIEN (1975 - Modifié 1991, 2000, 2018)
+════════════════════════════════════════════════════════════════════════════════
+
+TITRE I : RESSOURCES EN EAU ET DROITS D'UTILISATION
+
+Article 2 : Classification des eaux souterraines
+├─ Nappes phréatiques : Eaux proches de la surface (< 100m)
+├─ Nappes profondes : Eaux à grande profondeur (> 100m)
+└─ Réserves stratégiques : Non exploitables sans autorisation spéciale
+
+Article 13 : Déclaration obligatoire de forage
+├─ Tout forage doit être déclaré à la Délégation Régionale des Eaux (DRE)
+├─ Profondeur maximale autorisée : Selon la zone (voir TABLEAU ZONES)
+├─ Délai de déclaration : Avant le démarrage des travaux
+└─ Pénalité pour non-déclaration : 500-2000 TND
+
+Article 14 : Distance minimale entre forages
+├─ Distance minimale OBLIGATOIRE entre deux puits : 100 mètres
+├─ Distance minimale entre un puits et un canal d'irrigation : 50 mètres
+├─ Distance minimale entre un puits et une source : 200 mètres
+├─ Exception : Avec accord écrit de la DRE (rare)
+└─ Pénalité pour violation : Fermeture du forage + amende 2000-5000 TND
+
+Article 22 : Limitation des débits (Pompage et Exploitation)
+├─ Débit autorisé pour puits ménager : < 100 m³/jour
+├─ Débit autorisé pour exploitation agricole < 5ha : 200-500 m³/jour
+├─ Débit autorisé pour exploitation agricole >= 5ha : Selon licence (demande DRE)
+├─ Dépassement du débit : Fermeture immédiate du forage
+└─ Contrôle : Inspecteurs DRE (3-4 visites/an par zone)
+
+Article 25 : Zones d'interdiction de forage
+├─ Zone d'interdiction absolue : Périmètres de captage AEP (Eau potable)
+│  └─ Distance minimale du captage : 1000 mètres
+├─ Zone d'interdiction phréatique : Gabès Nord + Gabès Ouest
+│  └─ Raison : Nappe phréatique à 93,7% d'exploitation
+├─ Zone sensible : El Hamma, Mareth, Matmata
+│  └─ Réglementation stricte : Permis écrit obligatoire
+└─ Consultation : Carte interactive sur site DRE Gabès
+
+════════════════════════════════════════════════════════════════════════════════
+2. PLAN DE DÉVELOPPEMENT LOCAL (PDL) - GABÈS 2023-2035
+════════════════════════════════════════════════════════════════════════════════
+
+OBJECTIF PRINCIPAL : Économie d'eau (cible 80% réduction consommation d'ici 2035)
+
+STRATÉGIE 1 : Conversion obligatoire à l'irrigation goutte-à-goutte
+
+Article PDL 2.1 : Transition vers l'irrigation efficace
+├─ Délai limite pour reconversion : 31/12/2030
+├─ Cultures visées : Palmier, Grenadier, Olivier, Agrumes
+├─ Rendement espéré : 50% économie eau + 30% augmentation rendement
+├─ Équipement obligatoire : Goutte-à-goutte (> 90% efficacité)
+└─ Interdictions progressives :
+   ├─ 2026 : Arrosage par aspersion interdit (sauf dérogation)
+   ├─ 2028 : Inondation (bassin) interdite en plaine
+   └─ 2030 : Complétement phaseout (100% goutte-à-goutte)
+
+Article PDL 2.2 : Subventions APIA pour irrigation
+├─ Prime installation goutte-à-goutte : 50% du coût du matériel
+├─ Prime collecte eau pluie (citernes) : 40% du coût
+├─ Prime forage optimisé : 30% du coût du forage
+├─ Prime installation panneaux solaires (pompage) : 60% du coût
+├─ Limitation : Surface max bénéficiaire = 5 hectares par agriculteur
+├─ Délai de versement : 6-12 mois après facture fournie
+└─ Contact : APIA Gabès - apia.gabes@agriculture.tn - Tel: +216 75 200 700
+
+STRATÉGIE 2 : Diversification des cultures et augmentation de rendement
+
+Article PDL 3.1 : Promotion agriculture biologique
+├─ Certification obligatoire pour export : Label AOC ou BIO
+├─ Prime agriculture biologique : 500 TND/ha/an (3 ans)
+├─ Cultures certifiées : Grenadier Gabsi AOC, Olivier Chemlali, Datte Deglet Nour
+├─ Formation gratuite : Centres techniques CRDA (Centre Régional Développement Agricole)
+└─ Coût certification : 800-1200 TND (subventionné à 70%)
+
+Article PDL 3.2 : Promotion plantes médicinales et aromatiques (PAM)
+├─ Cultures recommandées : Henné de Gabès, Thym, Coriandre, Safran
+├─ Prix marché : 10-50 TND/kg (vs 2-5 TND/kg pour fruits ordinaires)
+├─ Prime production PAM : 1000-2000 TND/ha/an
+├─ Densité plantation : 20 000 plants/ha
+├─ Durée de rentabilité : 2-3 ans (vs 5 ans pour palmier)
+└─ Contact : CRDA Gabès pour formation
+
+STRATÉGIE 3 : Lutte contre la pollution et la salinité
+
+Article PDL 4.1 : Restriction utilisation engrais chimiques
+├─ Limite azote (N) : 200 kg/ha/an (était 300 avant PDL)
+├─ Limite phosphore (P) : 60 kg/ha/an
+├─ Limite potassium (K) : 100 kg/ha/an
+├─ Obligation : Analyse de sol tous les 2 ans
+├─ Amende pour dépassement : 500-2000 TND
+└─ Alternative obligatoire : Compost organique (50% du besoin)
+
+Article PDL 4.2 : Gestion des déchets agricoles
+├─ Obligation : Recyclage palmes sèches en compost
+├─ Interdiction : Brûlage sur place (amende 300 TND)
+├─ Prime compostage : 200 TND/tonne de déchets recyclés
+├─ Centres compostage : CRDA Gabès peut fournir soutien
+└─ Calendrier : Collecte déchets oct-nov avant nouvelle campagne
+
+════════════════════════════════════════════════════════════════════════════════
+3. ZONES D'EXPLOITATION AGRICOLE À GABÈS
+════════════════════════════════════════════════════════════════════════════════
+
+TABLEAU : Réglementation par délégation
+
+DÉLÉGATION : Gabès Ville (Médina)
+├─ Nappe phréatique : ZONE INTERDICTION (93,8% exploitée)
+├─ Forage autorisé : Sondage profond UNIQUEMENT (> 300m)
+├─ Permis requis : OUI - Dossier complet à DRE Gabès
+├─ Débit autorisé : 150-300 m³/jour (selon surface)
+├─ Salinité attendue : Haute (2500-3500 mg/l NaCl)
+├─ Culture adaptée : Palmier Deglet Nour, Henné
+└─ Contrainte GCT : Pollution SO2 à 200-500m du complexe
+
+DÉLÉGATION : Gabès Ouest (Ouesta, Chentecha)
+├─ Nappe phréatique : ZONE INTERDICTION (partiellement)
+├─ Forage autorisé : Sondage profond seulement (> 200m)
+├─ Permis requis : OUI - Justification agronomique
+├─ Débit autorisé : 100-200 m³/jour
+├─ Salinité attendue : Modérée à Haute (1500-2500 mg/l)
+├─ Culture adaptée : Palmier, Olivier, Grenadier tolérant sel
+└─ Oasis historiques : Protection du patrimoine foncier
+
+DÉLÉGATION : Gabès Sud
+├─ Nappe phréatique : ZONE AUTORISÉE (exploitation < 60%)
+├─ Forage autorisé : Puits de surface ET sondage (100-250m)
+├─ Permis requis : OUI - Déclaration simple
+├─ Débit autorisé : 300-500 m³/jour
+├─ Salinité attendue : Faible à Modérée (800-1500 mg/l)
+├─ Culture adaptée : Grenadier Gabsi AOC, Maraîchage
+└─ Avantage : Zone à potentiel de développement
+
+DÉLÉGATION : El Hamma et El Hamma Ouest
+├─ Nappe phréatique : ZONE SENSIBLE (Nappe profonde)
+├─ Forage autorisé : Sondage profond > 300m OBLIGATOIRE
+├─ Permis requis : OUI - Étude hydrogéologique
+├─ Débit autorisé : 200-400 m³/jour
+├─ Salinité attendue : Variable par secteur (800-2000 mg/l)
+├─ Principale culture : Palmier (majorité oasis)
+├─ Patrimoine : Zone de conservation (% plantation ancienne protégée)
+└─ Risque : Affaissement (subsidence) si surexploitation
+
+DÉLÉGATION : Métouia et Oudhref
+├─ Nappe phréatique : ZONE AUTORISÉE (historiquement exploitée)
+├─ Forage autorisé : Puits ET sondage (80-200m)
+├─ Permis requis : OUI - Déclaration obligatoire
+├─ Débit autorisé : 250-400 m³/jour
+├─ Salinité attendue : Modérée (1000-1800 mg/l)
+├─ Culture adaptée : Palmier, Grenadier, Datte
+└─ Point fort : Accès route reliant au port Sfax (export)
+
+DÉLÉGATION : Mareth
+├─ Nappe phréatique : ZONE EXPLOITABLE (< 50% exploit.)
+├─ Forage autorisé : Puits + sondage (100-300m)
+├─ Permis requis : OUI - Déclaration simple
+├─ Débit autorisé : 400-600 m³/jour
+├─ Salinité attendue : Faible (500-1200 mg/l)
+├─ Principales cultures : Olivier (80% du gouvernorat), Palmier
+├─ Avantage : Meilleures conditions hydrogéologiques
+└─ Spécialité : Huile d'olive (export qualité premium)
+
+DÉLÉGATION : Matmata (Ancienne + Nouvelle)
+├─ Nappe phréatique : ZONE DIFFICILE (Aquifère restreint)
+├─ Forage autorisé : Sondage > 400m (rare succès)
+├─ Permis requis : OUI - Étude hydrogéologique obligatoire
+├─ Débit autorisé : 50-150 m³/jour (très limité)
+├─ Salinité attendue : Très haute (> 2000 mg/l)
+├─ Culture adaptée : SEULEMENT Palmier résistant + pluie (Baa-ouni)
+└─ Limitation : Zone protégée (patrimoine troglodyte + écosystème)
+
+DÉLÉGATION : Ghannouch
+├─ Nappe phréatique : ZONE MODÉRÉMENT AUTORISÉE
+├─ Forage autorisé : Puits ET sondage (120-250m)
+├─ Permis requis : OUI - Déclaration
+├─ Débit autorisé : 200-350 m³/jour
+├─ Salinité attendue : Modérée (1200-1800 mg/l)
+├─ Culture adaptée : Datte, Grenadier, Palmier
+└─ Proximité : Marché local + export (30km de Sfax)
+
+════════════════════════════════════════════════════════════════════════════════
+4. AUTORISATION ET PERMIS AGRICOLES
+════════════════════════════════════════════════════════════════════════════════
+
+PROCÉDURE DE FORAGE : Délai total 2-8 semaines
+
+Étape 1 : Demande officielle
+├─ Formulaire CERFA (gratuit DRE)
+├─ Pièces requises :
+│  ├─ Titre de propriété du terrain
+│  ├─ Plan cadastral signé (limites du terrain)
+│  ├─ Identité et signature propriétaire
+│  └─ Localisation GPS (coordonnées Lambert/UTM)
+├─ Frais dossier : 150-300 TND
+└─ Dépôt : Délégation Régionale des Eaux (DRE) Gabès
+
+Étape 2 : Instruction (3-4 semaines)
+├─ Visite terrain DRE + hydrogéologue
+├─ Vérification distance autres forages
+├─ Analyse capacité nappe
+├─ Validation ou rejet
+└─ Notification officielle au demandeur
+
+Étape 3 : Autorisation de forage (si acceptée)
+├─ Validité : 1-2 ans max
+├─ Limitation débit : Inscription sur permis
+├─ Obligation : Forage effectué par entreprise agrée (liste DRE)
+├─ Contrôle qualité : Inspection DRE avant minage
+└─ Coût total autorisation : 300-500 TND
+
+Étape 4 : Enregistrement annuel (Renouvellement)
+├─ Frais annuels : 100 TND
+├─ Déclaration de débit réel annuel
+├─ Inspection aléatoire (compteurs requis dès 2027)
+└─ Non-paiement : Suspension de l'autorisation
+
+════════════════════════════════════════════════════════════════════════════════
+5. AGRICULTURE BIOLOGIQUE & CERTIFICATIONS
+════════════════════════════════════════════════════════════════════════════════
+
+CERTIFICATION AOC GRENADIER GABSI
+
+Cahier des charges AOC Grenadier Gabsi
+├─ Zone géographique : UNIQUEMENT délégations Gabès Sud, El Hamma, Mareth
+├─ Sol requis : Limoneux ou calcaire (pH 6.5-8.0)
+├─ Fertilisation : EXCLUSIVEMENT compost organique (pas chimique)
+├─ Traitement phytosanitaire : Produits certifiés BIO seulement
+├─ Irrigation : Goutte-à-goutte obligatoire
+├─ Densité plantation : 400-500 plants/ha (espacement 4x5m)
+├─ Rendement : Min 8 tonnes/ha à maturité
+├─ Traçabilité : Cahier de culture obligatoire (5 ans)
+├─ Certification : IFOAM ou ECOCERT (coût 1000-1500 TND/3ans)
+└─ Prix vente : +30-50% vs grenadier ordinaire (export)
+
+CERTIFICATION AGRICULTURE BIOLOGIQUE (AB)
+
+Conversion AB
+├─ Durée transition : 3 années complètes (36 mois)
+├─ Année 1-2 : Restrictions chimiques progressives
+├─ Année 3 : Certification pleine si conformité
+├─ Formalités : Dossier + inspection annuelle
+├─ Coût certification : 800-1200 TND (subventionné 70% = 240-360 TND)
+├─ Subvention exploitation AB : 500 TND/ha/an (années 1-3)
+├─ Prime supplémentaire : 200 TND/ha si vente directe circuit court
+└─ Contact : Agence Bio Tunisie - bio.tunisia@agriculture.tn
+
+════════════════════════════════════════════════════════════════════════════════
+6. AIDES FINANCIÈRES (APIA 2024-2026)
+════════════════════════════════════════════════════════════════════════════════
+
+PROGRAMME 1 : Installation système d'irrigation goutte-à-goutte
+
+Condition d'éligibilité
+├─ Surface minimum : 0.5 hectare
+├─ Surface maximum : 5 hectares
+├─ Agriculteur : Résident Tunisie, immatriculation CNSS valide
+├─ Propriété : Titre foncier ou contrat location 5+ ans
+└─ Cultures éligibles : Palmier, Grenadier, Olivier, Agrumes, Fruitiers
+
+Taux d'aide APIA
+├─ Matériel (tuyaux, goutteurs, filtres) : 50% du coût HT
+├─ Installation (main-d'œuvre) : 25% du coût total
+├─ Système électronique (programmateur, capteurs) : 40%
+├─ Puits/forage (matériel uniquement) : 30%
+├─ Pompe électrique ou solaire : 40%
+└─ Montant maximum : 15 000 TND par exploitation
+
+Dossier demande
+├─ Formulaire APIA (gratuit en ligne : www.apia.tn)
+├─ Devis détaillé des équipements
+├─ Plan cadastral signalant périmètre irrigation
+├─ Facture pro-forma (avant achat)
+├─ Engagement respect norme environnement
+└─ Délai dépôt : Avant 31/12 de chaque année
+
+PROGRAMME 2 : Plantation arbres fruitiers ou palmier
+
+Subvention plantation
+├─ Palmier dattier : 40 TND/plant (max 100 plants = 4000 TND)
+├─ Grenadier Gabsi : 30 TND/plant (max 200 plants = 6000 TND)
+├─ Olivier : 25 TND/plant (max 150 plants = 3750 TND)
+├─ Agrumes : 35 TND/plant (max 100 plants = 3500 TND)
+└─ Cumul max : 10 000 TND par exploitation
+
+Conditions
+├─ Espacement respect (8x8m palmier, 4x5m grenadier, 6x6m olivier)
+├─ Plants certifiés AOC ou label officiel
+├─ Attestation origine (pépinière agréée CRDA)
+├─ Visite APIA avant versement (vérification plantation)
+└─ Engagement: Entretien 3 années + assurance
+
+PROGRAMME 3 : Ferme solaire (pompage d'eau)
+
+Aide panneaux solaires
+├─ Panneaux solaires photovoltaïques : 60% du coût
+├─ Onduleur + batteries stockage : 50%
+├─ Forage/puits compatible : 30%
+├─ Installation électrique : 25%
+└─ Montant maximum : 20 000 TND
+
+Avantage environnemental
+├─ Réduit coût électricité (- 80% vs électricité STEG)
+├─ Indépendance énergétique
+├─ Respect PDL 2035 (énergie renouvelable)
+├─ Prime supplémentaire PDL : 2000 TND si 100% solaire
+└─ Durée amortissement : 5-7 ans
+
+PROGRAMME 4 : Formation et conseil agricole
+
+Formation gratuite APIA
+├─ Techniques irrigation goutte-à-goutte (2 jours)
+├─ Gestion engrais organique et compost (1 jour)
+├─ Taille et entretien palmier / grenadier (2 jours)
+├─ Lutte IPM (Integrated Pest Management) (2 jours)
+├─ Certification agriculture biologique (3 jours)
+├─ Vente et circuit court (1 jour)
+└─ Planning : Mensuel par CRDA Gabès
+
+Conseil personnalisé
+├─ Visite exploitation : Gratuit (3 visites/an)
+├─ Analyse sol : 100 TND (prix CRDA)
+├─ Plan d'irrigation optimisé : Gratuit (ingénieur APIA)
+└─ Contact : APIA Gabès - apia.gabes@agriculture.tn - Tel: +216 75 200 700
+
+════════════════════════════════════════════════════════════════════════════════
+7. RESTRICTIONS ENVIRONNEMENTALES & POLLUTION
+════════════════════════════════════════════════════════════════════════════════
+
+MENACE 1 : Pollution du Groupe Chimique Tunisien (GCT)
+
+Zones impactées
+├─ Rayon 500m du complexe GCT : Pollution SO2 (300-600 µg/m³)
+├─ Rayon 500-1000m : Dépôts acides (pluies acidifiées)
+├─ Rayon 1000-2000m : Impact modéré
+└─ Au-delà 2000m : Négligeable
+
+Cultures non recommandées (zone < 500m GCT)
+├─ Agrumes (sensibles SO2)
+├─ Laitue / Légumes feuilles
+├─ Herbes aromatiques délicates
+└─ Cultures organoleptiques (gout altéré)
+
+Cultures tolérantes pollution GCT
+├─ Palmier dattier (très résistant SO2)
+├─ Olivier (tolérance acceptable)
+├─ Grenadier Gabsi (résistance bonne)
+├─ Henné (très tolérant)
+└─ Datte industrielle (acceptable)
+
+Compensation PDL
+├─ Prime pollution zone GCT : 500 TND/ha/an
+├─ Durée : 5 ans (renouvelable)
+├─ Condition : Dossier auprès Préfecture Gabès + CRDA
+└─ Contact : Délégation Gouverneur Gabès
+
+MENACE 2 : Salinité des nappes souterraines
+
+Échelle salinité (Conductivité électrique - CE)
+├─ < 1000 mg/l : Eau peu salée (apte tout type culture)
+├─ 1000-2500 mg/l : Eau moyennement salée (restrictions légères)
+├─ 2500-4000 mg/l : Eau très salée (cultures sélectives)
+└─ > 4000 mg/l : Eau excessivement salée (INADAPTÉ agriculture)
+
+Recommandations par salinité eau
+├─ Si CE < 1000 : Palmier, Olivier, Grenadier, Maraîchage OK
+├─ Si CE 1000-2500 : Palmier, Olivier, Grenadier OK / Maraîchage limité
+├─ Si CE 2500-4000 : SEULEMENT Palmier + Henné
+└─ Si CE > 4000 : Agriculture non recommandée (consulter DRE)
+
+Traitement eau salée
+├─ Apport compost 10-15 t/ha : Améliore structure sol
+├─ Gypse 2-5 t/ha : Remplace Na par Ca (désalinise)
+├─ Lessivage : Irrigation 1.5x volume normal (avant plantation)
+├─ Rotation henné : Récolte 3e année, replant moins salée
+└─ Coût total : 2000-4000 TND/ha
+
+MENACE 3 : Maladies et ravageurs spécifiques Gabès
+
+Maladie 1 : Fusariose du palmier (Fusarium oxysporum)
+├─ Symptômes : Jaunissement feuilles, pourriture racines, dépérissement
+├─ Propagation : Sol contaminé (persistant 10+ ans)
+├─ Prévention : Plants certifiés sains + désinfection outillage
+├─ Traitement : Pas de cure (éradication plant et sol requis)
+├─ Coût éradication : 500-1000 TND/plant
+├─ Impact : Peut décimer plantation (100% perte en 2-3 ans si non stoppé)
+└─ Fonte de semis variante juvenile : Risque haut pour plants jeunes
+
+Maladie 2 : Oïdium grenadier (Sphaerotheca fuliginea)
+├─ Symptômes : Poudre blanche feuilles/fleurs, avortement fruit
+├─ Conditions : Humidité 80%+ ET température 15-25°C
+├─ Prévention : Goutte-à-goutte (mouiller feuillage interdit)
+├─ Traitement : Soufre mouillable (1% solution) spray régulier
+├─ Fréquence : Tous les 10 jours (printemps + début été)
+├─ Coût traitement : 200-300 TND/saison
+└─ Impact réduction : -30-50% rendement si non traité
+
+Ravageur 1 : Araignée rouge (Tetranychus urticae)
+├─ Cible : Palmier, Olivier, Grenadier (feuilles)
+├─ Symptômes : Pointillés rouges feuilles, affaiblissement
+├─ Période pic : Juillet-septembre (chaleur + sécheresse)
+├─ Prévention : Goutte-à-goutte + humidité sol constante
+├─ Traitement chimique : Acaricide (imidaclopride, soufre)
+├─ Traitement biologique : Lâchers prédateurs Phytoseiulus
+├─ Coût : 150-250 TND/mois (traitement régulier)
+└─ Impact : Possible perte 40-60% rendement si non combattu
+
+Ravageur 2 : Midge des dattes (Contarinia maculipennis)
+├─ Cible : Inflorescences palmier dattier
+├─ Dégât : Avortement fleurs, absence fruit
+├─ Période pic : Mars-avril (floraison palmier)
+├─ Prévention : Défeutrage des régimes à bon escient
+├─ Traitement : Insecticide neem oil ou pyrèthrine (BIO OK)
+├─ Fréquence : 2-3 pulvérisations avril-mai
+├─ Coût : 100-200 TND/saison
+└─ Impact : Perte 50-80% production si période floraison affectée
+
+════════════════════════════════════════════════════════════════════════════════
+8. TARIFS ET COÛTS TYPES (2026)
+════════════════════════════════════════════════════════════════════════════════
+
+INVESTISSEMENT INITIAL (Par hectare)
+
+Scénario 1 : Palmier dattier (8x8m) sans irrigation existante
+├─ Plants Deglet Nour certifiés (160 plants) : 3200 TND (20 TND/plant)
+├─ Puits forage (150-200m) : 4000-6000 TND
+├─ Système goutte-à-goutte : 2000-3000 TND
+├─ Amendement sol (compost) : 1000 TND
+├─ Travaux terrassement : 1500 TND
+├─ Main-d'œuvre plantation : 500 TND
+└─ TOTAL ANNÉE 1 : 12 200-15 200 TND / ha
+   APRÈS SUBVENTION APIA (50% irrigation) : 8200-11200 TND net
+
+Scénario 2 : Grenadier Gabsi AOC (4x5m)
+├─ Plants certifiés AOC (500 plants) : 15 000 TND (30 TND/plant)
+├─ Système goutte-à-goutte : 2500-3500 TND
+├─ Amendement sol (liming + compost) : 1500 TND
+├─ Travaux et main-d'œuvre : 1000 TND
+└─ TOTAL ANNÉE 1 : 20 000-23 000 TND / ha
+   APRÈS SUBVENTION APIA (50% irrigation) : 17 250-20 250 TND net
+
+Scénario 3 : Olivier intensif (6x6m)
+├─ Plants Chemlali certifiés (280 plants) : 7000 TND (25 TND/plant)
+├─ Système goutte-à-goutte : 2000-2500 TND
+├─ Amendement sol : 800 TND
+├─ Main-d'œuvre : 500 TND
+└─ TOTAL ANNÉE 1 : 10 300-11 300 TND / ha
+   APRÈS SUBVENTION APIA (50% irrigation) : 8050-9050 TND net
+
+COÛTS ENTRETIEN ANNUEL (Par hectare)
+
+├─ Eau d'irrigation (15-25 m³/arbre/an) : 500-800 TND/ha
+├─ Fertilisation compost organique : 300-500 TND
+├─ Traitements phytosanitaires : 200-400 TND
+├─ Main-d'œuvre (taille, récolte, entretien) : 1500-2500 TND
+├─ Équipement remplacement (tous 5 ans) : 200-300 TND/an
+└─ TOTAL ENTRETIEN ANNUEL : 2700-4500 TND / ha
+
+REVENU ANNUEL À MATURITÉ
+
+Palmier Deglet Nour
+├─ Rendement (année 5+) : 50-80 kg/arbre, soit 8-12 tonnes/ha
+├─ Prix vente (moyenne) : 3-5 TND/kg dattes sèches
+├─ Revenu brut : 24 000-60 000 TND / ha
+├─ Revenu net (après coûts) : 19 500-55 500 TND / ha
+└─ Point équilibre : Année 4-5
+
+Grenadier Gabsi AOC
+├─ Rendement (année 4+) : 20-30 kg/arbre, soit 10-15 tonnes/ha
+├─ Prix vente AOC : 4-8 TND/kg (vs 2-3 TND/kg ordinaire)
+├─ Revenu brut : 40 000-120 000 TND / ha
+├─ Revenu net (après coûts) : 35 500-115 500 TND / ha
+└─ Point équilibre : Année 3-4
+
+Olivier Chemlali
+├─ Rendement (année 5+) : 40-60 kg/arbre (olives), soit 11-17 tonnes/ha
+├─ Rendement huile : 17-24% (1.9-4.1 tonnes huile/ha)
+├─ Prix huile : 8-12 TND/litre
+├─ Revenu brut huile : 15 000-50 000 TND / ha
+├─ Revenu net (après coûts) : 10 500-45 500 TND / ha
+└─ Point équilibre : Année 4-6
+
+════════════════════════════════════════════════════════════════════════════════
+9. CONTACTS UTILES & RESSOURCES
+════════════════════════════════════════════════════════════════════════════════
+
+ADMINISTRATIONS
+
+Délégation Régionale des Eaux (DRE) Gabès
+├─ Adresse : Rue de la République, Gabès 6000
+├─ Tel : +216 75 270 555 | Fax : +216 75 270 884
+├─ Email : dre.gabes@water.tn
+├─ Services : Permis forage, débit eau, zone autorisation
+└─ Horaires : Dimanche-jeudi 8h-14h (été), 8h-16h (hiver)
+
+Centre Régional Développement Agricole (CRDA) Gabès
+├─ Adresse : Avenue Bourguiba, Gabès 6000
+├─ Tel : +216 75 200 700 | Fax : +216 75 203 125
+├─ Email : crda.gabes@agriculture.tn
+├─ Services : Conseils techniques, analyses sol, certification BIO
+└─ Horaires : 8h-13h / 15h-18h (lun-jeu), 8h-13h (vend-sam)
+
+APIA (Agence Promotion Investissements Agricoles)
+├─ Adresse : Immeuble APIA, Rue Hedi Chaker, Tunis 1002
+├─ Tel : +216 71 962 900 | Fax : +216 71 798 133
+├─ Site Web : www.apia.tn
+├─ Email : contact@apia.tn | info@apia.tn
+├─ Services : Subventions irrigation, plantation, formation
+└─ Bureau Gabès : Tel +216 75 200 700 (antenne CRDA)
+
+Gouvernorat Gabès
+├─ Adresse : Palais du Gouvernement, Gabès 6000
+├─ Tel : +216 75 270 033
+├─ Services : Permis special zones sensibles, dérogations
+└─ Horaires : 8h-13h / 14h-17h (lun-jeu)
+
+CERTIFICATION & QUALITÉ
+
+Agence Bio Tunisie
+├─ Email : bio.tunisia@agriculture.tn
+├─ Services : Certification AB, suivi normes
+└─ Coût : 800-1200 TND / 3 ans (subvention 70%)
+
+Institut National de Normalisation et Propriété Industrielle (INNORPI)
+├─ Tel : +216 71 843 744
+├─ Services : Certification AOC Grenadier Gabsi
+└─ Durée : 3-6 mois pour agrément
+
+CENTRES TECHNIQUES
+
+Pépinière CRDA Gabès (Plants certifiés)
+├─ Spécialité : Palmier, Grenadier AOC, Olivier, Agrumes
+├─ Prix : 15-35 TND/plant (selon variété)
+├─ Réservation : Novembre-décembre (avant plantation janvier-février)
+└─ Tel : +216 75 200 700
+
+École Supérieure d'Agriculture du Kef (ESAK)
+├─ Formations : Techniques palmier, gestion eau, énergie solaire
+├─ Niveau : Modules courts (1-2 semaines) ou diplôme
+├─ Coût : 500-2000 TND (gratuit pour APIA subventionnés)
+└─ Contact : +216 78 205 277
+
+════════════════════════════════════════════════════════════════════════════════
+10. RÉSUMÉ RÈGLES CRITIQUES POUR L'IA
+════════════════════════════════════════════════════════════════════════════════
+
+✅ OBLIGATIONS STRICTES À RESPECTER
+
+1. FORAGE & EAU
+   • Tout forage = Déclaration obligatoire DRE avant démarrage
+   • Distance minimale 100m entre 2 puits (150m si un existant proche)
+   • Zone INTERDICTION PHRÉATIQUE : Gabès Ville, Gabès Ouest (sondage profond OBLIGATOIRE)
+   • Débit max respecté selon zone (vérifier TABLEAU ZONES)
+   • Nappe phréatique Gabès Nord = 93.7% exploitée (criticité haute)
+
+2. IRRIGATION
+   • Goutte-à-goutte obligatoire depuis 2026 (aspersion interdite 2026+, inondation 2028+)
+   • Subvention APIA 50% coût goutte-à-goutte (max 5ha/exploitation)
+   • Économie eau cible PDL 2035 = 80% réduction (vs maintenant)
+
+3. CULTURE & SOL
+   • Type sol détermine culture (Limoneux pour Grenadier, Calcaire pour Olivier)
+   • Salinité eau détermine espèce (Si CE > 2500 mg/l = palmier/henné SEULEMENT)
+   • Compost organique obligatoire (50% du besoin fertilisant) depuis PDL 2023
+   • Analyse sol tous les 2 ans (légalement requis)
+
+4. CERTIFICATIONS
+   • AOC Grenadier Gabsi = Exclusively 3 délégations (Gabès Sud, El Hamma, Mareth)
+   • AB certification = 3 ans transition (non productif années 1-2)
+   • Premium bio/export = prix +30-50% vs conventionnel
+
+5. POLLUTION & MENACES
+   • Zone GCT (500m) = Cultures tolérantes SEULEMENT (palmier/olivier OK, agrumes NON)
+   • Fusariose palmier = Pas de cure (éradication obligatoire + coût 500-1000 TND/plant)
+   • Salinité > 4000 mg/l = Agriculture non recommandée
+
+6. FINANCEMENT
+   • APIA prime installation = 50% irrigation, 40% citernes, 30% forage, 60% solaire
+   • Prime agriculture bio = 500 TND/ha/an (3 ans)
+   • Prime plantation = 25-40 TND/plant selon espèce
+   • Montant max APIA = 15 000-20 000 TND par exploitation
+
+❌ ERREURS À ÉVITER ABSOLUMENT
+
+   ✗ Recommander Séguia si client déclare Sondage profond
+   ✗ Recommander maraîchage en zone > 2500 mg/l salinité
+   ✗ Oublier l'obligation goutte-à-goutte (depuis 2026)
+   ✗ Ignorer restrictions délégation (zone interdiction phréatique)
+   ✗ Ne pas citer source règles (CODE EAUX, PDL, APIA, CRDA)
+   ✗ Dépasser budget client > 20%
+   ✗ Recommander grenadier AOC hors zones autorisées
+
+════════════════════════════════════════════════════════════════════════════════
+FIN BASE RÉGLEMENTAIRE
+Prochaine mise à jour : 2027
+════════════════════════════════════════════════════════════════════════════════

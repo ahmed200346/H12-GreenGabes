@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyse de Terrain Agricole — Gabès</title>
+    <style>
+      /* Boutons de téléchargement */
+      .download-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .btn-download {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        transition: all 0.2s;
+        text-align: center;
+      }
+
+      .btn-download:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-download:active {
+        transform: translateY(0);
+      }
+
+      .btn-download-primary {
+        background: linear-gradient(135deg, #4bc714, #30880d);
+        color: white;
+      }
+
+      .btn-download-secondary {
+        background: var(--accent2);
+        color: white;
+      }
+
+      .preview-section {
+        margin-top: 20px;
+        padding: 15px;
+        background: var(--card2);
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+      }
+
+      .preview-title {
+        color: var(--accent);
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .preview-text {
+        max-height: 250px;
+        overflow-y: auto;
+        font-size: 0.9em;
+        white-space: pre-wrap;
+        color: #ddd;
+        padding: 10px;
+        background: var(--card);
+        border-radius: 8px;
+        line-height: 1.4;
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      :root {
+        /* Charte couleur du site principal */
+        --bg: #0a0a0a;
+        --card: #052501;
+        --card2: #0d3d02;
+        --border: #1a5a0f;
+        --accent: #4bc714;
+        --accent2: #30880d;
+        --accent3: #63ce33;
+        --text: #ffffff;
+        --muted: #b0b8c0;
+        --chip-bg: #0f2806;
+        --chip-border: #1a5a0f;
+        --chip-active: #4bc714;
+        --radius: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: linear-gradient(135deg, var(--bg) 0%, #051a01 100%);
+        color: var(--text);
+        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        padding: 0;
+      }
+
+      /* Header */
+      .header {
+        background: linear-gradient(135deg, #052501 0%, #0d3d02 100%);
+        border-bottom: 2px solid var(--accent);
+        padding: 20px 0 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        height: 200px;
+        background: radial-gradient(
+          ellipse,
+          rgba(75, 199, 20, 0.15) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .header-inner {
+        position: relative;
+        z-index: 1;
+        padding: 0 24px 20px;
+      }
+      .logo-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 6px;
+      }
+      .logo-icon {
+        font-size: 28px;
+      }
+      .logo-title {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        background: linear-gradient(90deg, #4bc714, #63ce33);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .logo-sub {
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 16px;
+      }
+
+      /* Progress bar */
+      .progress-wrap {
+        padding: 0 24px 0;
+      }
+      .progress-steps {
+        display: flex;
+        gap: 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .step-tab {
+        flex: 1;
+        padding: 10px 4px;
+        text-align: center;
+        font-size: 11px;
+        color: var(--muted);
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+        position: relative;
+        bottom: -1px;
+      }
+      .step-tab.active {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+      .step-tab.done {
+        color: #4bc71466;
+      }
+      .step-num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--chip-bg);
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 3px;
+        color: var(--muted);
+      }
+      .step-tab.active .step-num {
+        background: var(--accent);
+        color: #052501;
+        font-weight: 700;
+      }
+      .step-tab.done .step-num {
+        background: #4bc71433;
+        color: var(--accent);
+      }
+
+      /* Main */
+      .main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 28px 20px 80px;
+      }
+
+      /* Section card */
+      .section-card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 22px 20px;
+        margin-bottom: 14px;
+        animation: fadeSlide 0.35s ease both;
+        box-shadow: 0 4px 12px rgba(75, 199, 20, 0.08);
+      }
+
+      @keyframes fadeSlide {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .section-card:nth-child(2) {
+        animation-delay: 0.05s;
+      }
+      .section-card:nth-child(3) {
+        animation-delay: 0.1s;
+      }
+      .section-card:nth-child(4) {
+        animation-delay: 0.15s;
+      }
+      .section-card:nth-child(5) {
+        animation-delay: 0.2s;
+      }
+      .section-card:nth-child(6) {
+        animation-delay: 0.25s;
+      }
+
+      .section-title {
+        font-size: 15px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
+        color: var(--accent3);
+      }
+      .section-title .icon {
+        font-size: 18px;
+      }
+      .section-hint {
+        font-size: 11.5px;
+        color: var(--muted);
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+
+      /* Select */
+      select {
+        width: 100%;
+        padding: 12px 16px;
+        background: var(--chip-bg);
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        color: var(--text);
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234bc714' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      select:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 8px rgba(75, 199, 20, 0.3);
+      }
+
+      /* Dimension row */
+      .dim-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .field-group label {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 6px;
+        display: block;
+      }
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 14px;
+        background: var(--chip-bg);
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        color: var(--text);
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        transition: all 0.2s;
+      }
+      input[type="number"]:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 8px rgba(75, 199, 20, 0.3);
+      }
+
+      .surface-display {
+        background: var(--card2);
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        padding: 12px 16px;
+        text-align: center;
+        font-size: 14px;
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.3px;
+      }
+      .surface-display span.label {
+        color: var(--muted);
+        font-weight: 500;
+        font-size: 13px;
+        margin-right: 6px;
+      }
+
+      /* Chips */
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .chip {
+        padding: 9px 16px;
+        border-radius: 50px;
+        background: var(--chip-bg);
+        border: 1.5px solid var(--border);
+        font-size: 13px;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.18s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+        color: var(--text);
+      }
+      .chip .ar {
+        font-family: "Tajawal", sans-serif;
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .chip:hover {
+        border-color: var(--accent);
+        background: rgba(75, 199, 20, 0.1);
+      }
+      .chip.selected {
+        background: rgba(75, 199, 20, 0.2);
+        border-color: var(--accent);
+        color: var(--accent);
+        font-weight: 600;
+      }
+      .chip.selected .ar {
+        color: var(--accent);
+      }
+
+      /* Budget chips — bigger */
+      .chips.budget .chip {
+        padding: 10px 18px;
+      }
+
+      /* Water source icons */
+      .chip .chip-icon {
+        font-size: 16px;
+        margin-bottom: 2px;
+      }
+
+      /* Objectif */
+      .chips.objectif .chip {
+        padding: 12px 22px;
+        font-size: 14px;
+      }
+
+      /* --- Page 2 hidden by default --- */
+      .page {
+        display: none;
+      }
+      .page.active {
+        display: block;
+      }
+
+      /* Bottom nav */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(5, 37, 1, 0.98);
+        backdrop-filter: blur(12px);
+        border-top: 2px solid var(--accent);
+        padding: 14px 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 100;
+      }
+      .btn {
+        flex: 1;
+        padding: 14px;
+        border-radius: 12px;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .btn-secondary {
+        background: var(--chip-bg);
+        color: var(--text);
+        border: 1.5px solid var(--border);
+      }
+      .btn-secondary:hover {
+        border-color: var(--accent);
+        background: rgba(75, 199, 20, 0.1);
+        color: var(--accent);
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #4bc714, #30880d);
+        color: #ffffff;
+        box-shadow: 0 4px 15px rgba(75, 199, 20, 0.35);
+        font-weight: 700;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(75, 199, 20, 0.5);
+      }
+      .btn-primary:disabled {
+        background: #0d2006;
+        color: #2d5a1d;
+        box-shadow: none;
+        cursor: not-allowed;
+      }
+
+      /* Summary preview */
+      .summary-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .summary-item {
+        background: var(--card2);
+        border-radius: 10px;
+        padding: 14px;
+        border: 1px solid var(--border);
+      }
+      .summary-item .s-label {
+        font-size: 11px;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      .summary-item .s-val {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--accent);
+      }
+
+      /* Generating state */
+      .generating {
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .spinner {
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 20px;
+        border: 3px solid var(--border);
+        border-top-color: var(--accent);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .gen-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--accent3);
+      }
+      .gen-sub {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      /* Responsive */
+      @media (max-width: 480px) {
+        .dim-row {
+          grid-template-columns: 1fr;
+        }
+        .chips.budget .chip {
+          padding: 10px 12px;
+          font-size: 12px;
+        }
+        .summary-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-inner">
+        <div class="logo-row">
+          <span class="logo-icon">🌴</span>
+          <span class="logo-title">Green Gabes</span>
+        </div>
+        <div class="logo-sub">Analyse intelligente de terrain agricole</div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-steps">
+          <div class="step-tab active" id="tab1">
+            <div class="step-num">1</div>
+            <br />Terrain
+          </div>
+          <div class="step-tab" id="tab2">
+            <div class="step-num">2</div>
+            <br />Objectif
+          </div>
+          <div class="step-tab" id="tab3">
+            <div class="step-num">3</div>
+            <br />Résumé
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- ============ PAGE 1 ============ -->
+      <div class="page active" id="page1">
+        <!-- Localisation -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">📍</span> Où est le terrain ? / أين تقع الأرض ؟
+          </div>
+          <label
+            style="
+              font-size: 12px;
+              color: var(--muted);
+              display: block;
+              margin-bottom: 6px;
+            "
+          >
+            Délégation / الولاية
+          </label>
+          <select id="delegation">
+            <option value="">— Choisir — / اختر —</option>
+            <optgroup label="Gabès Ville / مدينة قابس">
+              <option value="gabes_ville">Gabès Ville / مدينة قابس</option>
+            </optgroup>
+            <optgroup label="Oasis proches / الواحات القريبة">
+              <option value="chenini">Chenini Gabès / تشنيني قابس</option>
+              <option value="metouia">Métouia / المتوية</option>
+              <option value="ghannouch">Ghannouch / غنوش</option>
+              <option value="chatt_essalem">Chatt Essalem / شط السلام</option>
+              <option value="kettana">Kettana / قطانة</option>
+              <option value="teboulbou">Teboulbou / تبولبو</option>
+              <option value="oudhref">Oudhref / أودرف</option>
+            </optgroup>
+            <optgroup label="Gouvernorat Gabès / محافظة قابس">
+              <option value="el_hamma">El Hamma / الحمة</option>
+              <option value="matmata">Matmata / مطماطة</option>
+              <option value="mareth">Mareth / مارث</option>
+            </optgroup>
+          </select>
+          <div class="section-hint">
+            Détermine automatiquement le climat, la pluviométrie et le
+            microclimat / يحدد تلقائيا المناخ وكمية الأمطار والمناخ المحلي
+          </div>
+        </div>
+
+        <!-- Dimensions -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">📐</span> Quelle taille ? / ما حجم الأرض ؟
+          </div>
+          <div class="dim-row">
+            <div class="field-group">
+              <label>Longueur (m) / الطول (م)</label>
+              <input
+                type="number"
+                id="longueur"
+                placeholder="50"
+                min="1"
+                oninput="calcSurface()"
+              />
+            </div>
+            <div class="field-group">
+              <label>Largeur (m) / العرض (م)</label>
+
+              <input
+                type="number"
+                id="largeur"
+                placeholder="60"
+                min="1"
+                oninput="calcSurface()"
+              />
+            </div>
+          </div>
+          <div class="surface-display" id="surfaceDisplay">
+            <span class="label">Surface calculée : / المساحة المحسوبة :</span>
+            <span id="surfaceVal">—</span>
+          </div>
+          <div class="section-hint">
+            Si tu ne sais pas les dimensions — compte tes pas (1 pas ≈ 0.8m)
+          </div>
+        </div>
+
+        <!-- Sol -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">🪨</span> Quel type de sol ? / ما نوع التربة ؟
+          </div>
+          <div class="chips" id="chips-sol">
+            <div class="chip" onclick="selectChip(this, 'sol')">
+              <span class="chip-icon">🟤</span>Limoneux (Tfali)
+              <span class="ar">طفالي</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'sol')">
+              <span class="chip-icon">🟡</span>Sablonneux
+              <span class="ar">رملي</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'sol')">
+              <span class="chip-icon">⚪</span>Calcaire
+              <span class="ar">حري / كلسي</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'sol')">
+              <span class="chip-icon">🧂</span>Salin (Chott)
+              <span class="ar">سبخة / مالح</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'sol')">
+              <span class="chip-icon">🔴</span>Argileux
+              <span class="ar">طيني</span>
+            </div>
+          </div>
+          <div class="section-hint">
+            Frotter entre les doigts : colle = argileux · gratte = sablonneux ·
+            doux = limoneux
+          </div>
+        </div>
+
+        <!-- Eau -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">💧</span> D'où vient l'eau ? / من أين تأتي المياه
+            ؟
+          </div>
+          <div class="chips" id="chips-eau">
+            <div class="chip" onclick="selectChip(this, 'eau')">
+              <span class="chip-icon">🏞️</span>Séguia / Canal
+              <span class="ar">ساقية</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'eau')">
+              <span class="chip-icon">🚰</span>Sondage profond
+              <span class="ar">صونداج</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'eau')">
+              <span class="chip-icon">⛏️</span>Puits de surface
+              <span class="ar">بئر سطحي</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'eau')">
+              <span class="chip-icon">♨️</span>Eau géothermique
+              <span class="ar">مياه سخنة</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'eau')">
+              <span class="chip-icon">🏺</span>Citerne
+              <span class="ar">سيتيرنا</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'eau')">
+              <span class="chip-icon">🌧️</span>Pluie uniquement
+              <span class="ar">بعلي</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arbres existants -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">🌳</span> Y a-t-il déjà des arbres ? / هل توجد
+            أشجار بالفعل ؟
+          </div>
+          <div class="chips" id="chips-arbres">
+            <div class="chip selected" onclick="selectChip(this, 'arbres')">
+              Non, terrain vide<span class="ar">خالي</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'arbres')">
+              Quelques arbres<span class="ar">شوية</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'arbres')">
+              Beaucoup d'arbres<span class="ar">كثير</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page1 -->
+
+      <!-- ============ PAGE 2 ============ -->
+      <div class="page" id="page2">
+        <!-- Objectif -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">🎯</span> Quel est ton objectif ? / ماهو هدفك ؟
+          </div>
+          <div class="chips" id="chips-objectif">
+            <div class="chip" onclick="selectChip(this, 'objectif')">
+              <span class="chip-icon">⏱️</span>Rentabilité rapide (Maraîchage)
+              <span class="ar">ربح سريع</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'objectif')">
+              <span class="chip-icon">✈️</span>Exportation (Dattes, Grenades)
+              <span class="ar">تصدير</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'objectif')">
+              <span class="chip-icon">🌱</span>Agriculture Biologique
+              <span class="ar">فلاحة بيولوجية</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'objectif')">
+              <span class="chip-icon">🏠</span>Autosuffisance
+              <span class="ar">عولة / إكتفاء</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Budget -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">💰</span> Quel budget ? / ما ميزانيتك ؟
+          </div>
+          <div class="chips budget" id="chips-budget">
+            <div class="chip" onclick="selectChip(this, 'budget')">
+              Petit — &lt; 500 DT<span class="ar">صغير</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'budget')">
+              Moyen — 500–2000 DT<span class="ar">متوسط</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'budget')">
+              Grand — &gt; 2000 DT<span class="ar">كبير</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Priorité arbres -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">🌿</span> Préférence d'arbres ? / تفضيل الأشجار ؟
+          </div>
+          <div class="chips" id="chips-pref" style="gap: 8px">
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              🌴 Palmier dattier<span class="ar">نخلة</span>
+            </div>
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              🍎 Grenadier Gabsi<span class="ar">رمان</span>
+            </div>
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              🫒 Olivier<span class="ar">زيتون</span>
+            </div>
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              🍋 Citronnier<span class="ar">ليمون</span>
+            </div>
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              🍌 Bananier<span class="ar">موز</span>
+            </div>
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              🍐 Figuier<span class="ar">تين</span>
+            </div>
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              🍇 Vigne<span class="ar">عنب</span>
+            </div>
+            <div class="chip" onclick="toggleChip(this, 'pref')">
+              Aucune préférence<span class="ar">ما عنديش</span>
+            </div>
+          </div>
+          <div class="section-hint">
+            Tu peux sélectionner plusieurs arbres (multi-sélection)
+          </div>
+        </div>
+
+        <!-- Problème connu -->
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">⚠️</span> Problème connu sur le terrain ? / هل
+            توجد مشكلة معروفة بالأرض ؟
+          </div>
+          <div class="chips" id="chips-probleme">
+            <div class="chip" onclick="selectChip(this, 'probleme')">
+              Aucun<span class="ar">ما فماش</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'probleme')">
+              Sol salé<span class="ar">ملوحة</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'probleme')">
+              Inondations<span class="ar">فيضان</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'probleme')">
+              Sécheresse<span class="ar">جفاف</span>
+            </div>
+            <div class="chip" onclick="selectChip(this, 'probleme')">
+              Pollution<span class="ar">تلوث</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page2 -->
+
+      <!-- ============ PAGE 3 — RÉSUMÉ ============ -->
+      <div class="page" id="page3">
+        <div class="section-card">
+          <div class="section-title">
+            <span class="icon">📋</span> Résumé de ton terrain
+          </div>
+          <div class="summary-grid" id="summaryGrid">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+        <div class="section-card" id="generatingSection" style="display: none">
+          <div class="generating">
+            <div class="spinner"></div>
+            <div class="gen-title">Analyse en cours...</div>
+            <div class="gen-sub">
+              Le modèle IA analyse ton terrain<br />et prépare les
+              recommandations
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page3 -->
+    </div>
+    <!-- /main -->
+
+    <!-- BOTTOM NAV -->
+    <div class="bottom-nav">
+      <button
+        class="btn btn-secondary"
+        id="btnBack"
+        onclick="prevPage()"
+        style="display: none"
+      >
+        ← Retour
+      </button>
+      <button class="btn btn-primary" id="btnNext" onclick="nextPage()">
+        Suivant →
+      </button>
+    </div>
+
+    <script>
+      // ── State ──
+      const state = {
+        delegation: "",
+        longueur: "",
+        largeur: "",
+        surface: "",
+        sol: "",
+        eau: "",
+        arbres: "",
+        objectif: "Les deux",
+        budget: "",
+        pref: [],
+        probleme: "",
+      };
+      let currentPage = 1;
+
+      // ── Surface calc ──
+      function calcSurface() {
+        const l = parseFloat(document.getElementById("longueur").value);
+        const w = parseFloat(document.getElementById("largeur").value);
+        const el = document.getElementById("surfaceVal");
+        if (l > 0 && w > 0) {
+          const s = l * w;
+          state.longueur = l;
+          state.largeur = w;
+          state.surface = s;
+          el.textContent =
+            s.toLocaleString("fr") + " m²  (" + (s / 10000).toFixed(3) + " ha)";
+        } else {
+          el.textContent = "—";
+          state.surface = "";
+        }
+      }
+
+      // ── Single-select chips ──
+      function selectChip(el, group) {
+        const container = document.getElementById("chips-" + group);
+        container
+          .querySelectorAll(".chip")
+          .forEach((c) => c.classList.remove("selected"));
+        el.classList.add("selected");
+        state[group] = el.textContent.trim().split("\n")[0].trim();
+      }
+
+      // ── Multi-select chips ──
+      function toggleChip(el, group) {
+        el.classList.toggle("selected");
+        state[group] = [
+          ...document
+            .getElementById("chips-" + group)
+            .querySelectorAll(".chip.selected"),
+        ].map((c) => c.childNodes[0].textContent.trim());
+      }
+
+      // ── Navigation ──
+      function showPage(n) {
+        document.querySelectorAll(".page").forEach((p, i) => {
+          p.classList.toggle("active", i + 1 === n);
+        });
+        document.querySelectorAll(".step-tab").forEach((t, i) => {
+          t.className = "step-tab";
+          if (i + 1 < n) t.classList.add("done");
+          if (i + 1 === n) t.classList.add("active");
+        });
+        document.getElementById("btnBack").style.display =
+          n > 1 ? "block" : "none";
+        document.getElementById("btnNext").textContent =
+          n === 1
+            ? "Suivant →"
+            : n === 2
+              ? "Voir résumé →"
+              : "Générer le rapport 🌿";
+        currentPage = n;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function nextPage() {
+        if (currentPage < 3) {
+          // collect select value
+          if (currentPage === 1) {
+            state.delegation = document.getElementById("delegation").value;
+          }
+          showPage(currentPage + 1);
+        } else {
+          generateReport();
+        }
+        if (currentPage === 3) buildSummary();
+      }
+
+      function prevPage() {
+        if (currentPage > 1) showPage(currentPage - 1);
+      }
+
+      // ── Summary ──
+      const delegLabels = {
+        gabes_ville: "Gabès Ville",
+        chenini: "Chenini",
+        metouia: "Métouia",
+        ghannouch: "Ghannouch",
+        chatt_essalem: "Chatt Essalem",
+        kettana: "Kettana",
+        teboulbou: "Teboulbou",
+        oudhref: "Oudhref",
+        el_hamma: "El Hamma",
+        matmata: "Matmata",
+        mareth: "Mareth",
+        "": "—",
+      };
+
+      function buildSummary() {
+        state.delegation = document.getElementById("delegation").value;
+        const items = [
+          { label: "📍 Délégation", val: delegLabels[state.delegation] || "—" },
+          {
+            label: "📐 Surface",
+            val: state.surface
+              ? state.surface.toLocaleString("fr") + " m²"
+              : "—",
+          },
+          { label: "🪨 Type de sol", val: state.sol || "—" },
+          { label: "💧 Source d'eau", val: state.eau || "—" },
+          { label: "🌳 Arbres actuels", val: state.arbres || "—" },
+          { label: "🎯 Objectif", val: state.objectif || "—" },
+          { label: "💰 Budget", val: state.budget || "—" },
+          { label: "⚠️ Problème", val: state.probleme || "—" },
+        ];
+        document.getElementById("summaryGrid").innerHTML = items
+          .map(
+            (i) =>
+              `<div class="summary-item"><div class="s-label">${i.label}</div><div class="s-val">${i.val}</div></div>`,
+          )
+          .join("");
+      }
+
+      // ── Generate (placeholder → will connect to AI model) ──
+      async function generateReport() {
+        // 1. Afficher l'animation de chargement
+        document.getElementById("generatingSection").style.display = "block";
+        document.getElementById("btnNext").disabled = true;
+        document.getElementById("btnNext").textContent =
+          "Génération IA en cours...";
+        document.querySelector(".gen-title").textContent =
+          "Analyse par Llama 3.3...";
+        document.querySelector(".gen-sub").textContent =
+          "Veuillez patienter pendant la création du rapport sur-mesure.";
+
+        // 2. Préparer les données
+        const payload = {
+          delegation: state.delegation,
+          surface_m2: state.surface,
+          longueur_m: state.longueur,
+          largeur_m: state.largeur,
+          sol: state.sol,
+          eau: state.eau,
+          arbres_existants: state.arbres,
+          objectif: state.objectif,
+          budget: state.budget,
+          preferences_arbres: state.pref,
+          probleme: state.probleme,
+        };
+
+        console.log("📦 Envoi des données au backend :", payload);
+
+        try {
+          // 3. Appel réel à votre serveur Flask
+          const response = await fetch("/api/generate-report", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+
+          const data = await response.json();
+
+          if (data.status === "success") {
+            // 4. Succès : Mettre à jour l'interface
+            document.getElementById("btnNext").textContent =
+              "✅ Rapport Terminé !";
+            document.querySelector(".gen-title").textContent =
+              "✅ Analyse terminée !";
+            document.querySelector(".gen-sub").textContent =
+              "Le rapport a été généré avec succès. Cliquez sur le bouton ci-dessous pour télécharger le PDF.";
+            document.querySelector(".spinner").style.display = "none";
+
+            // 5. Afficher l'aperçu du texte
+            const previewDiv = document.createElement("div");
+            previewDiv.style.marginTop = "20px";
+            previewDiv.style.padding = "15px";
+            previewDiv.style.background = "var(--card2)";
+            previewDiv.style.borderRadius = "var(--radius)";
+            previewDiv.style.textAlign = "left";
+
+            previewDiv.innerHTML = `
+        <h3 style="color: var(--accent); margin-bottom:10px;">Aperçu du Rapport :</h3>
+        <div style="max-height: 250px; overflow-y: auto; font-size: 0.9em; white-space: pre-wrap; color: #ddd;">
+            ${data.report_text}
+        </div>
+        <div style="margin-top: 15px; display: flex; gap: 10px;">
+          <button onclick="telechargerPDF('${data.pdf_filename}', '${data.delegation}')" 
+                  style="flex: 1; padding: 12px; background: var(--accent); color: #052501; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; font-size: 15px;">
+            📥 Télécharger le PDF
+          </button>
+          <button onclick="afficherApercu('${data.pdf_url}')" 
+                  style="flex: 1; padding: 12px; background: var(--accent2); color: white; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; font-size: 15px;">
+            👁️ Aperçu PDF
+          </button>
+        </div>
+      `;
+
+            document
+              .getElementById("generatingSection")
+              .appendChild(previewDiv);
+            document.getElementById("btnNext").disabled = false;
+          } else {
+            throw new Error(data.message || "Erreur serveur");
+          }
+        } catch (error) {
+          // 6. Gestion des erreurs
+          console.error("Erreur de connexion :", error);
+          document.getElementById("btnNext").textContent = "❌ Réessayer";
+          document.querySelector(".gen-title").textContent =
+            "Erreur de génération";
+          document.querySelector(".gen-sub").textContent =
+            `Impossible de générer le rapport : ${error.message}`;
+          document.querySelector(".spinner").style.display = "none";
+          document.getElementById("btnNext").disabled = false;
+        }
+      }
+
+      // ── Fonction de téléchargement automatique ──
+      function telechargerPDF(filename, delegation) {
+        const lien = document.createElement("a");
+        lien.href = `/download-rapport/${filename}`;
+        lien.download = `Rapport_${delegation}_${new Date().toLocaleDateString("fr-FR")}.pdf`;
+        document.body.appendChild(lien);
+        lien.click();
+        document.body.removeChild(lien);
+        console.log("✅ Téléchargement lancé : " + lien.download);
+      }
+
+      // ── Fonction d'aperçu PDF ──
+      function afficherApercu(pdfUrl) {
+        window.open(pdfUrl, "_blank");
+        console.log("📄 Aperçu PDF ouvert");
+      }
+    </script>
+  </body>
+</html>
